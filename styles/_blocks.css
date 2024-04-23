@@ -1,0 +1,6 @@
+.wp-block-columns {
+    @apply flex flex-wrap gap-4;
+}
+.wp-block-column {
+    @apply flex-1;
+}
