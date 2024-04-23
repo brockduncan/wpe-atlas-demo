@@ -12,6 +12,7 @@ export default function Component(props) {
   const { title: siteTitle, description: siteDescription } =
     props.data.generalSettings;
   const menuItems = props.data.primaryMenuItems.nodes;
+  const headerTopMenuItems = props.data.headerTopMenuItems.nodes;
   const { title, content, date, author } = props.data.post;
 
   return (
@@ -24,6 +25,7 @@ export default function Component(props) {
         siteTitle={siteTitle}
         siteDescription={siteDescription}
         menuItems={menuItems}
+        headerTopMenuItems={headerTopMenuItems}
       />
 
       <main className="container">
